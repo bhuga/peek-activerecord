@@ -36,7 +36,6 @@ module Peek
       end
 
       def inject_peek_activerecord(&block)
-        puts "injecting"
         return block.call unless peek_activerecord_enabled?
         ret = nil
         queries = []
