@@ -20,15 +20,36 @@ Or install it yourself as:
 
     $ gem install peek-activerecord
 
+In `/app/assets/stlyesheets/application.scss`:
+
+```
+ = require peek/views/activerecord
+ = require peek/views/activerecord/pygments
+```
+
+In `/app/assets/javascripts/application.coffee`:
+
+```
+#= require peek/views/activerecord
+```
+
+This works the same way in `application.js` if you have that instead, just put
+the require in a comment.
+
 ## Usage
 
-TODO: Write usage instructions here
+Any page with `peek_enbled?` will have a new `ActiveRecord Queries` link. Click
+on it to see your queries:
+
+![](https://github-slack.s3.amazonaws.com/monosnap/Your_Builds_2017-06-27_14-00-43.png)
+
+Controllers have a new method, `peek_activerecord_enabled?`, that you can
+overwrite to separate AR enabled-ness from peek enabled-ness if you like.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+There's no good development harness yet, sorry. Contributions are welcome if
+you're up to it.
 
 ## Contributing
 
