@@ -1,0 +1,57 @@
+#peek.display-activerecord-modal {
+  height: auto;
+
+  #peek-activerecord-modal {
+    display: block;
+  }
+}
+
+#peek-activerecord-modal {
+  display: none;
+  clear: both;
+  background: #000;
+
+  .duration-header {
+    max-width: 100px;
+  }
+
+  .cached-header {
+    width: 50px;
+  }
+
+  .duration-data, .cache-data {
+    text-align: center;
+  }
+
+  .duration-data {
+    max-width: 100px;
+  }
+
+  .cache-data {
+    width: 50px;
+  }
+
+  .sql-data {
+    text-align: left;
+    pre {
+      white-space: normal;
+      .highlight {
+        font-family: monospace;
+      }
+    }
+  }
+
+  ul {
+    display: block;
+    li {
+      display: block;
+      ul.row {
+        display: flex;
+        flex-direction: row;
+        li {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
