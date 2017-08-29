@@ -1,8 +1,6 @@
 # Peek::Activerecord
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/peek/activerecord`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This plugin displays the ActiveRecord queries run during a request.
 
 ## Installation
 
@@ -38,7 +36,7 @@ the require in a comment.
 
 ## Usage
 
-Any page with `peek_enbled?` will have a new `ActiveRecord Queries` link. Click
+Any page with `peek_enabled?` will have a new `ActiveRecord Queries` link. Click
 on it to see your queries:
 
 ![](https://github-slack.s3.amazonaws.com/monosnap/Your_Builds_2017-06-27_14-00-43.png)
